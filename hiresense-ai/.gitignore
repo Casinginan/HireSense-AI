@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+frontend/.env.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# VS Code (keep shared settings, ignore user-specific)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json

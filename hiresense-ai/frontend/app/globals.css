@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  background-color: #F6F7FB;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+::selection {
+  background-color: #2FD1B8;
+  color: #0B1220;
+}
+
+/* Visible keyboard focus everywhere, per accessibility requirements (SRS Section 28) */
+:focus-visible {
+  outline: 2px solid #2FD1B8;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
